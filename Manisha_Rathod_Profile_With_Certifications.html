@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manisha Rathod | Data Analyst</title>
+  <style>
+    :root {
+      --primary: #1f3c57;
+      --hover: #007acc;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: var(--primary);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-group a {
+      display: inline-block;
+      background-color: #fff;
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 5px;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      font-weight: bold;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .btn-group a:hover {
+      background-color: var(--hover);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.25rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-box {
+      padding: 1rem;
+      border-radius: 10px;
+      color: #1f3c57;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .project-box:nth-child(1) { background-color: #e6f2ff; }
+    .project-box:nth-child(2) { background-color: #f3f9e3; }
+
+    .project-box:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transform: translateY(-4px);
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .project-box a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .project-box a:hover {
+      color: var(--hover);
+      text-decoration: underline;
+    }
+
+    .certification-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .certification-grid a {
+      display: block;
+      background-color: #f5f5f5;
+      padding: 0.75rem;
+      border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--primary);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: 500;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .certification-grid a:hover {
+      background-color: #e0f0ff;
+      transform: scale(1.03);
+      color: var(--hover);
+    }
+
+    @media screen and (max-width: 600px) {
+      .btn-group a {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
+      header h1 { font-size: 1.8rem; }
+      header h3 { font-size: 1.2rem; }
+
+      .project-grid, .certification-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Manisha Rathod</h1>
+    <h3>Data Analyst</h3>
+    <div class="btn-group">
+      <a href="mailto:r.manisharathod6@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/manisha-rathod-a600a71a6/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/rmanisharathod" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Results-driven Data Analyst with over 3 years of experience in leveraging data to drive business decisions...</p>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <h3>Data Analyst Consultant</h3>
+      <p><strong>Freelancer</strong></p>
+      <ul>
+        <li>Analyzed historical retail store transaction records using SQL and Python...</li>
+      </ul>
+      <h3>Transportation Specialist</h3>
+      <p><strong>Amazon (India Operations)</strong></p>
+      <ul>
+        <li>Streamlined delivery network logistics, reducing delivery performance variability by 20%...</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-box">
+          <h4>Sales & Profit Insights – Tailwind Traders</h4>
+          <p>Developed a Tableau dashboard to analyze regional sales, profitability, and top-selling categories.</p>
+          <a href="https://github.com/rmanisharathod/Tailwind-Traders" target="_blank">View Project</a>
+        </div>
+        <div class="project-box">
+          <h4>Customer & Sales Insight – Superstore Dataset</h4>
+          <p>Used Python & Power BI to identify customer segments and high-value customers from Superstore dataset.</p>
+          <a href="https://github.com/rmanisharathod/Superstore-Data-Analysis" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Computer Science</strong><br/>
+      Savitribai Phule Pune University</p>
+      <p><em>Relevant Coursework:</em> Database Management System, SQL, Data Project Management, Statistics</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Metadata & Data Governance:</strong> Collibra, Apache Atlas</li>
+        <li><strong>Programming Languages:</strong> Python, SQL, DAX</li>
+        <li><strong>Tools & Technologies:</strong> Power BI, Tableau, MS Excel, Jupyter Notebook, Looker Studio, Google BigQuery</li>
+      </ul>
+    </section>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <div class="certification-grid">
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/NECTRIVRJYAR" target="_blank">Microsoft Power BI</a>
+        <a href="https://intellipaat.com/academy/certificate-link/?Yz02MTkmdT0yMzY4MjUmZXh0PTE=" target="_blank">MS SQL</a>
+        <a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank">MySQL, SQL Server, PostgreSQL</a>
+        <a href="https://www.freecodecamp.org/certification/manisharathod/data-analysis-with-python-v7" target="_blank">Data Analysis With Python</a>
+        <a href="https://skillshop.credential.net/81d83f3a-02df-425e-bda5-7bee30aba76f#acc.t5c3Mfuv" target="_blank">Google Analytics</a>
+        <a href="https://www.linkedin.com/learning/certificates/22ecdbf3e8f35eb12115e2da26c55b75918a3cb2d78bd3d50b07b3610f1cdee5?trk=share_certificate" target="_blank">Prompt Engineering for Generative AI</a>
+        <a href="https://learn.deeplearning.ai/accomplishments/87d329c6-92ba-4586-a8df-64541f055d3e?usp=sharing" target="_blank">ChatGPT for Prompt Engineering for Developers</a>
+        <a href="https://upgrad.certificate.givemycertificate.com/c/33043cc1-e5ae-44df-9412-068e490e5eb1" target="_blank">Advanced Prompt Engineering with ChatGPT</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
