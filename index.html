@@ -11,10 +11,11 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Aptos, sans-serif;
       margin: 0;
       background: #fff;
       color: var(--primary);
+      line-height: 1.6; /* Added for better readability */
     }
 
     header {
@@ -63,18 +64,42 @@
     }
 
     h2 {
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--primary);
+      padding-bottom: 0.15rem;
+      margin-top: 1.5rem;
+    }
+
+    h3, h4 {
+      margin-top: 0.5rem;
+    }
+    p {
+      margin: 0;
     }
 
     ul {
       padding-left: 1.2rem;
+      margin-top: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.15rem;
+    }
+    h2, h3, h4, p {
+     margin: 0;
+    }
+
+    p + h2, p + h3, p + h4,
+    h2 + p, h3 + p, h4 + p {
+     margin-top: 0.15rem;
+     margin-bottom: 0.25rem;
     }
 
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
+      margin-top: 1rem;
     }
 
     .project-box {
@@ -86,7 +111,7 @@
     }
 
     .project-box:nth-child(1) { background-color: #e6f2ff; }
-    .project-box:nth-child(2) { background-color: #f3f9e3; }
+    .project-box:nth-child(2) { background-color: #e6f2ff; }
 
     .project-box:hover {
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
@@ -115,6 +140,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
+      margin-top: 1rem;
     }
 
     .certification-grid a {
@@ -170,45 +196,30 @@
   <div class="container">
     <section>
       <h2>Professional Summary</h2>
-      <p> Results-driven Data Analyst with over 3 years of experience in leveraging data to drive
-          business decisions across cloud and enterprise environments. Skilled in analyzing large
-          datasets, building predictive models, and designing interactive dashboards using tools
-          like Python, SQL, Power BI, and Tableau. Strong background in metadata management
-          and data governance with hands-on expertise in AWS Glue, Apache Atlas, and Collibra.
-          Proven track record of improving operational efficiency through automation, enhancing
-         data quality, and translating complex data into actionable insights. Adept at working across
-         cross-functional teams to support data strategy, compliance, and business intelligence
-         initiatives in cloud-native ecosystems (AWS, Azure, GCP)</p>
+      <p>Results-driven Data Analyst with over 3 years of experience in leveraging data to drive business decisions across cloud and enterprise environments. Skilled in analyzing 	 large datasets, building predictive models, and designing interactive dashboards using tools like Python, SQL, Power BI, and Tableau. Strong background in metadata management and 	 data governance with hands-on expertise in AWS Glue, Apache Atlas, and Collibra. Proven track record of improving operational efficiency through automation, enhancing data quality, 	 and translating complex data into actionable insights. Adept at working across cross-functional teams to support data strategy, compliance, and business intelligence initiatives in 	 cloud-native ecosystems (AWS, Azure, GCP).</p>
     </section>
 
     <section>
       <h2>Work Experience</h2>
       <h3>Data Analyst Consultant</h3>
-      <p><strong>Freelancer</strong></p>
+      <p><strong>Freelancer</strong><br/>
+	June 2024 - December 2024</p>
       <ul>
-        <li>Processed and analyzed 10M+ transaction records using SQL and Python, implementing
-            time-series models (ARIMA, Prophet) that improved forecasting accuracy by 30%.</li>
-        <li>Designed a machine learning-based fraud detection system (Random Forest, anomaly
-            detection), cutting fraud by 22% and saving $500K.</li>
-        <li> Automated compliance and reporting workflows, reducing audit errors by 28%.</li>
-        <li>Built Power BI dashboards integrated with cloud data sources, improving decision-making
-            speed by 50%.</li>
-        <li>Collaborated on metadata tagging, creating structured data dictionaries and tracking
-            lineage for compliance.</li>
+        <li>Processed and analyzed 10M+ transaction records using SQL and Python, implementing time-series models (ARIMA, Prophet) that improved forecasting accuracy by 30%.</li>
+	<li>Designed a machine learning-based fraud detection system (Random Forest, anomaly detection), cutting fraud by 22% and saving $500K.</li>
+	<li>Automated compliance and reporting workflows, reducing audit errors by 28%.</li>
+	<li>Built Power BI dashboards integrated with cloud data sources, improving decision-making speed by 50%.</li>
+	<li> Collaborated on metadata tagging, creating structured data dictionaries and tracking lineage for compliance.</li>
       </ul>
       <h3>Transportation Specialist</h3>
-      <p><strong>Amazon (India Operations)</strong></p>
+      <p><strong>Amazon (NA Operations)</strong><br/>
+	October 2019 - August 2022</p>
       <ul>
-        <li>Managed regional dashboards for North America, ensuring performance tracking and
-            operational transparency.</li>
-        <li>Analyzed sales and transportation data to optimize budgets and logistics.</li>
-        <li>Developed and maintained detailed Excel databases for third-party vendors while
-            overseeing region-specific dashboards for performance tracking.</li>
-        <li>Extracted insights from customer complaints and metadata fields to drive process
-            improvements.</li>
-        <li>Contributedtooperationaldocumentationanddashboardgovernancewhileanalyzingsales
-            data and budgeting trends to drive revenue optimization and enhance cost management
-            strategies.</li>
+        <li>Managed regional dashboards for North America, ensuring performance tracking and operational transparency.</li>
+	<li>Analyzed sales and transportation data to optimize budgets and logistics.</li>
+	<li>Developed and maintained detailed Excel databases for third-party vendors while overseeing region-specific dashboards for performance tracking.</li>
+	<li>Extracted insights from customer complaints and metadata fields to drive process improvements.</li>
+	<li>Contributedtooperationaldocumentationanddashboardgovernancewhileanalyzingsales data and budgeting trends to drive revenue optimization and enhance cost management strategies.</li>
       </ul>
     </section>
 
@@ -217,12 +228,29 @@
       <div class="project-grid">
         <div class="project-box">
           <h4>Sales & Profit Insights – Tailwind Traders</h4>
-          <p>Developed a Tableau dashboard to analyze regional sales, profitability, and top-selling categories.</p>
+	   <p>February 2025</p>
+          <ul>
+	    <li>Developed a Power BI dashboard to analyze sales, profitability, customer trends, and inventory insights.</li>
+	    <li>Integrated Python for automated currency conversion and DAX for financial metrics, ensuring accurate cross-regional comparisons.</li>
+	    <li>Implemented DAX calculations for median sales, profit margins, and YTD profits, while Python scripting standardized financial data across multiple currencies.</li>
+	    <li>Insights revealed high-demand products, optimized inventory strategies, and key regional sales drivers.</li>
+	    <li>Customer behavior analysis refined marketing and loyalty programs, while sales representative performance tracking improved regional sales strategies.</li>
+	    <li>Leveraging Power BI, Python, and DAX, this project enhanced business intelligence for data-driven decision-making.</li>
+	  </ul>
           <a href="https://github.com/rmanisharathod/Tailwind-Traders" target="_blank">View Project</a>
         </div>
         <div class="project-box">
           <h4>Customer & Sales Insight – Superstore Dataset</h4>
-          <p>Used Python & Power BI to identify customer segments and high-value customers from Superstore dataset.</p>
+	   <p>March 2025</p>
+          <ul>
+	    <li>Conducted data cleaning and preprocessing to handle missing values and duplicates, ensuring data integrity.</li>
+	    <li>Leveraged Pandas, Matplotlib, and Seaborn for exploratory data analysis (EDA) to uncover trends in sales, profit, and quantity.</li>
+	    <li>Developed interactive visualizations, including histograms and boxplots, to analyze sales distribution, detect outliers, and assess profitability across customer segments.</li>
+	    <li>Time-series analysis on order dates identified seasonal sales patterns and peak demand periods, guiding inventory and marketing strategies.</li>
+	    <li>Regional and category-wise sales insights revealed high-evenue product segments and under-performing regions, optimizing pricing and supply chain decisions.</li>
+	    <li>Generated data-driven insights that improved customer segmentation, enabling targeted promotions and personalized marketing strategies.</li>
+	    <li>Provided insights that guided marketing strategy and supply chain optimization.</li>
+	  </ul>
           <a href="https://github.com/rmanisharathod/Superstore-Data-Analysis" target="_blank">View Project</a>
         </div>
       </div>
@@ -231,17 +259,58 @@
     <section>
       <h2>Education</h2>
       <p><strong>Bachelor of Computer Science</strong><br/>
-      Savitribai Phule Pune University</p>
-      <p><em>Relevant Coursework:</em> Database Management System, SQL, Data Project Management, Statistics</p>
+      2015-2019</p>
+      <p>Institute of Aeronautical of Engineering</p>
+      <p><em>Relevant Coursework:</em> Database Management System, SQL, Java, Project Management, Statistics.</p>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <ul>
-        <li><strong>Metadata & Data Governance:</strong> Collibra, Apache Atlas</li>
-        <li><strong>Programming Languages:</strong> Python, SQL, DAX</li>
-        <li><strong>Tools & Technologies:</strong> Power BI, Tableau, MS Excel, Jupyter Notebook, Looker Studio, Google BigQuery</li>
+      <p><strong>Metadata & Data Governance:</strong></p>
+      	<ul>
+          <li>AWS Glue Data Catalog, Apache Atlas, Collibra (familiarity), Data Lineage, Data Dictionaries</li>
+	  <li>DAX,ETLPipelines, Data Profiling, Data Quality Audits.</li>
+	</ul>
+      <p><strong>Programming Languages:</strong></p>
+	<ul>
+	  <li><strong>Python: </strong>Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn.</li>
+	  <li><strong>SQL: </strong>MySQL, PostgreSQL, SQL Server, Oracle.</li>
+	  <li><strong>R: </strong>ggplot2, dplyr, tidyr.</li>
+	</ul>
+      <p><strong>Tools and Technologies</strong></p>	
+	<ul>
+	  <li><strong>DataVisualization: </strong>Tableau, Power BI, Looker, Google Data Studio.</li>
+	  <li><strong>Spreadsheet Tools: </strong>Microsoft Excel, Google Sheets (Pivot tables, Macros, VBA).</li>
+	  <li><strong>Databases: </strong>MySQL, PostgreSQL, BigQuery, Snowflake, MongoDB.</li>
+	  <li><strong>ETL&DataWrangling: </strong>Alteryx, Apache Airflow, Talend.</li>
+	  <li><strong>BigData&CloudPlatforms: </strong>Google Cloud (BigQuery), AWS (Redshift, Athena), Azure.</li>
+	  <li><strong>BI&Reporting Tools: </strong>Tableau, Power BI, Excel dashboards.</li>
+	  <li><strong>Version Control: </strong>Git, GitHub</li>
+	</ul>
+     <p><strong>Cloud Technologies</strong></p>
+	<ul>
+	  <li><strong>Cloud Platforms: </strong>AWS (S3, EC2, RDS, Lambda, EMR), Azure (Data Lake, Synapse Analytics), Google Cloud Platform (BigQuery, Cloud Dataflow).</li>
       </ul>
+     <p><strong>Big Data Technologies</strong></p>
+	<ul>
+	  <li><strong>Hadoop Ecosystem: </strong>HDFS, Hive, HBase, Pig, Sqoop.</li>
+	  <li><strong>Stream Processing: </strong>Apache Kafka, Apache Storm.</li>
+	  <li><strong>DataCataloging: </strong>Apache Atlas, AWS Glue Data Catalog.</li>
+	</ul>
+     <p><strong>Version Control & Collaboration</strong></p>
+	<ul>
+	  <li><strong>Version Control: </strong>Git, GitHub, Bitbucket, Power BI service.</li>
+	  <li><strong>Collaboration Tools: </strong>Jira, Confluence, Slack.</li>
+	</ul>
+      <p><strong>Operating Systems</strong></p>
+	<ul>
+	  <li><strong>OSProficiency: </strong>Linux (Red Hat, Ubuntu), Windows, UNIX.</li>
+	</ul>
+      <p><strong>Full-Stack Web Development</strong></p>
+	<ul>
+	  <li><strong>Frontend: </strong>HTML, CSS, Bootstrap, AngularJS, jQuery.</li>
+	  <li><strong>Backend: </strong>Node.js, Express.js, MongoDB.</li>
+	</ul>
     </section>
 
     <section class="certifications">
